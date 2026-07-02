@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protein-pipeline"
+version = "1.0.0"
+description = "Homomer-interface discovery and amino-acid composition analysis pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "selenium>=4.10",
+    "lxml>=4.9",
+    "biopython>=1.81",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+protein-pipeline = "protein_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["protein_pipeline*"]
