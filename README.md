@@ -1,5 +1,6 @@
 # protein_pipeline
 
+AI重構，未經測試
 A modular, re-engineered rebuild of the original `discuss_protein_combain.py`
 / `__init__.py` scripts: a research pipeline that starts from a list of
 monomeric PDB entries, finds homomeric structural neighbours (NCBI VAST+),
